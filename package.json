@@ -1,0 +1,31 @@
+{
+  "name": "prng",
+  "version": "1.0.0",
+  "description": "Pseudo-Random Number Generator",
+  "main": "main.js",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^10.3.1",
+    "typescript": "^4.4.4",
+    "webpack": "^5.59.1",
+    "webpack-cli": "^4.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest",
+    "launch": "npm run build && npm run open",
+    "build": "webpack",
+    "open": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crossware/PRNG.git"
+  },
+  "author": "Cosmin S",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Crossware/PRNG/issues"
+  },
+  "homepage": "https://github.com/Crossware/PRNG#readme"
+}
