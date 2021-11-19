@@ -10,7 +10,7 @@ export default class LinearCongruential implements CalculationType{
   modulus: number = Math.pow(2, 32);
 
   public nextNumber(): number {
-    console.log(this.seed);
+    //console.log(this.seed);
     this.seed = (this.multiplier * this.seed + this.increment) % this.modulus;
     return this.seed;
   }
@@ -21,7 +21,7 @@ export default class LinearCongruential implements CalculationType{
 
   public checkNumberLimit(): void {
     for(var i = 0; i < 20; i++) {
-      console.log(this.nextRandomFloat());
+      //console.log(this.nextRandomFloat());
     }
     
     var results = [];
@@ -32,6 +32,6 @@ export default class LinearCongruential implements CalculationType{
       }
       results[rand] = true;
     }
-    console.log(i);
+    //console.log(i);
   }
 }
